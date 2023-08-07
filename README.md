@@ -1,2 +1,8 @@
-# VocabBoost
-  an educational web application or an online learning platform.  It falls under the category of "Educational" because its primary goal is to help users learn new words daily. The website provides a platform for users to discover and understand the meanings of five new words each day, enhancing their vocabulary and language skills.  As an online learning platform, it offers a specific educational service – word learning – in an interactive and engaging way. Users can interact with the website to view and understand the selected words and their meanings. The daily repetition of new words aims to aid in retention and long-term learning.
+# React + Vite
+
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
