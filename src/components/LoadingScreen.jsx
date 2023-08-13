@@ -16,7 +16,7 @@ export default function LoadingScreen() {
       stagger: 0.05,
       repeat: -1,
       delay: 0.2,
-      duration: 0.1,
+      duration: 0.2,
     });
     gsap.timeline({
       delay: 5, // Duration after which the loading screen will be removed
@@ -33,7 +33,7 @@ export default function LoadingScreen() {
     return (
       <div className="loading-screen" ref={loadingRef}>
         <Lottie animationData={animationData}/>
-        <h1 className='loading-text'>ViteVocab⚡</h1>
+        <h1 className='loading-text'>ViteVocab</h1>
       </div>
     )
 }
