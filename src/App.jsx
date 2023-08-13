@@ -13,7 +13,7 @@ import img5 from './assets/5.png';
 import './App.css'
 import jsonData from './data.json';
 import Word from './components/Word';
-import BottomNavBar from './components/BottomNavBar';
+import BottomNavBar from './components/BottomNavbar';
 import LoadingScreen from './components/LoadingScreen';
 
 
