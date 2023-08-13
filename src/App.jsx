@@ -126,10 +126,11 @@ function App() {
     };
 
     const randomWords = getRandomWords(parsedData, 5);
-    // Assign images to selected words
+    const images = [img1, img2, img3, img4, img5];
     randomWords.forEach((word, index) => {
-        word.image = eval(`img${index + 1}`);
+        word.image = images[index];
     });
+    
     console.log(randomWords)
     
     return (

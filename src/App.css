@@ -47,10 +47,10 @@
     position: relative;
     margin: 0;
     padding: 0;
-    transform: translateY(-35vh);
+    transform: translateY(-40vh);
     width: 100vw;
     z-index: 10;
-    height: 30vh;
+    height: 40vh;
     background: linear-gradient(180deg, rgba(0, 102, 255, 0.30) 0%, rgba(0, 255, 255, 0.60) 100%);
     backdrop-filter: blur(10px);
 }
