@@ -28,7 +28,7 @@ VocabBoost is built using modern web technologies, including React.js for the us
 1. Clone the repository: `git clone https://github.com/jonnfrancis/VocabBoost.git`
 2. Navigate to the project directory: `cd VocabBoost`
 3. Install dependencies: `npm install`
-4. Start the development server: `npm start`
+4. Start the development server: `npm run dev`
 
 ## Feedback and Contributions
 
