@@ -1,4 +1,4 @@
-import logo from '../assets/android-chrome-512x512.png';
+import logo from '../assets/android-chrome-192x192.png';
 
 const StatsModal = ({ onClose }) => {
     return (
