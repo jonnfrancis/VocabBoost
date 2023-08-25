@@ -3,7 +3,7 @@ import logo from '../assets/logo.png'
 
 export default function Word({ word, meaning, image, index }) {
     return (
-         <section className="word-container">
+         <section id={index} className="word-container">
          <div className="outer">
            <div className="inner">
              <div className="bg" style={{ backgroundImage: `url(${image})` }}>

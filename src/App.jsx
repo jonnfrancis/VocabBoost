@@ -1,7 +1,7 @@
 import Lenis from '@studio-freight/lenis'
 import { gsap } from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useState, useEffect } from 'react'
+import { useEffect } from 'react'
 import Observer from 'gsap/Observer';
 import SplitType from 'split-type'
 import img1 from './assets/1.png';
@@ -17,7 +17,6 @@ import BottomNavBar from './components/BottomNavbar';
 import LoadingScreen from './components/LoadingScreen';
 
 
-console.log(jsonData[0])
 gsap.registerPlugin(ScrollTrigger);
 
 function animateSections() {
@@ -140,6 +139,7 @@ function App() {
             {randomWords.map((word, index) => (
                 <Word
                     key={index}
+                    index={index}
                     word={word.word}
                     meaning={word.meaning}
                     image={word.image}

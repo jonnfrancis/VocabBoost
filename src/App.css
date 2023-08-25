@@ -133,7 +133,6 @@
     top: 0;
     position: fixed;
     visibility: hidden;
-    /* Add any other styling you need for your component */
 }
 
 .outer,
@@ -267,6 +266,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background-image: url(./assets/modal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     background-color: white;
     padding: 20px;
     border-radius: 8px;
@@ -285,8 +287,8 @@
 }
 
 .modal p {
-    font-size: 1rem;
-    color: #666;
+    font-size: var(--fs-500);
+    color: var(--clr-primary-300);
     margin-bottom: 20px;
 }
 
@@ -339,28 +341,33 @@
 }
 
 #home-modal h2 {
-    font-size: 1.5rem;
-    color: #333;
-    margin-bottom: 10px;
+    font-size: var(--fs-500);
+    width: 100%;
+    color: var(--clr-primary-300);
+    margin-bottom: 1rem;
 }
 
 #home-modal p {
-    font-size: 1.2rem;
-    color: #666;
-    margin-bottom: 20px;
+    font-size: var(--fs-400);
+    color: var(--clr-primary-200);
+    margin: 0;
+    margin-bottom: 1rem;
 }
 
-#home-highlight {
-    background-color: #ffcc00;
+.highlight-text {
+    background-color: var(--clr-primary-300);
+    color: var(--clr-accent-400) !important;
     padding: 10px;
+    margin-top: .75rem;
     border-radius: 5px;
     margin-bottom: 20px;
 }
 
-#home-highlight p {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #333;
+
+.scroll-g {
+    font-size: var(--fs-200);
+    font-weight: var(--fw-regular);
+    color: var(--clr-secondary-400);
     margin: 0;
 }
 
@@ -388,6 +395,10 @@
 #home-modal button:hover {
     background-color: var(--clr-secondary-400);
 }
-small {
-    color: var(--clr-primary-300);
+
+@media (min-width:1000px) {
+    #home-modal {
+        max-width: 700px;
+        background-position: ;
+    }
 }
