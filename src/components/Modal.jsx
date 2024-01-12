@@ -29,13 +29,13 @@ const HomeModal = ({ onClose }) => {
         <div id="home-overlay" className="modal-overlay" onClick={onClose}>
             <div id="home-modal" className="modal">
                 <h2 className="modal-title">Welcome to ViteVocab!</h2>
-                <p>Boost your vocabulary and amplify your impact!</p>
+                <p className="modal-desc">Keep scrolling until you have the 5 words on your screen right now memorized😃 . To get new words simply refresh the page by tapping on the logo below!</p>
                 <div className="highlight">
                     <p className='highlight-text'>Learn. Grow. Excel.</p>
                     <small className="scroll-g">Simply start scrolling...</small>
                 </div>
                 <div className="logo-container">
-                    <a href="https://jonnfrancis.github.io/" target="_blank" rel="noopener noreferrer">
+                    <a href="/" rel="noopener noreferrer">
                         <img src={logo} alt="ViteVocab Logo" />
                     </a>
                 </div>

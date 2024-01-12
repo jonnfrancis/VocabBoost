@@ -21,7 +21,6 @@
     z-index: 1;
     overflow: hidden;
     background-color: #fff;
-    /* Set the desired background color */
     clip-path: inset(100% 0 0 0);
 }
 
@@ -146,12 +145,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     position: absolute;
     height: 70vh;
     width: 100%;
     top: 0;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 .bg h2 {
@@ -180,6 +181,17 @@
     display: flex;
     justify-content: center;
   }
+.section-meaning {
+    visibility: hidden;
+    font-size: var(--fs-600);
+    font-family: var(--ff-base);
+    font-weight: var(--fw-regular);
+    color: var(--clr-primary-800);
+    max-width: 70%;
+    text-align: center;
+    /* text-transform: capitalize; */
+    letter-spacing: .25rem;
+}
 
 @media (min-width:600px) {
     .info-container {
@@ -211,13 +223,27 @@
 }
 @media (min-width:1000px) {
     .word-container {
-        display: flex;
-        flex-direction: row;
+        /* display: flex; */
+        /* flex-direction: row; */
         align-items: center;
     }
+    .section-meaning {
+        visibility: visible;
+    }
     .bg {
+        position: relative;
+    }
+    .overlay {
+        height: 100%;
+        width: 100%;
+        background: var(--clr-primary-400);
+        position: absolute;
+        z-index: -1;
+        opacity: 30%;
+        backdrop-filter: blur(10px);
     }
     .info-container{
+        position: absolute;
         transform: translateY(0);
         flex-direction: column;
         justify-content: center;
@@ -228,9 +254,12 @@
     .info-container > h1{
         font-size: var(--fs-700);
         overflow: hidden;
+        visibility: hidden;
     }
     .info-container > p{
         font-size: var(--fs-500);
+        visibility: hidden;
+        
     }
     .bottom-navbar{
         margin-bottom: 2rem;
@@ -338,6 +367,17 @@
     text-align: center;
     width: 80%;
     max-width: 400px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+        "title title"
+        "highlight desc"
+        "highlight desc"
+        "logo logo"
+        "btn btn"
+    ;
+    gap: .35rem;
 }
 
 #home-modal h2 {
@@ -345,13 +385,22 @@
     width: 100%;
     color: var(--clr-primary-300);
     margin-bottom: 1rem;
+    grid-area: title;
 }
 
 #home-modal p {
     font-size: var(--fs-400);
-    color: var(--clr-primary-200);
+    font-family: var(--ff-inter);
+    color: var(--clr-primary-700);
     margin: 0;
     margin-bottom: 1rem;
+    padding: .35rem;
+    text-align: justify;
+    letter-spacing: ;
+    grid-area: desc;
+}
+.highlight {
+    grid-area: highlight;
 }
 
 .highlight-text {
@@ -361,6 +410,7 @@
     margin-top: .75rem;
     border-radius: 5px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 
@@ -374,6 +424,7 @@
 #home-modal .logo-container {
     text-align: center;
     margin-bottom: 20px;
+    grid-area: logo;
 }
 
 #home-modal .logo-container img {
@@ -390,6 +441,8 @@
     font-weight: bold;
     font-size: 1.2rem;
     transition: background-color 0.3s;
+    grid-area: btn;
+
 }
 
 #home-modal button:hover {
@@ -397,8 +450,9 @@
 }
 
 @media (min-width:1000px) {
-    #home-modal {
+    #home-modal, .modal {
         max-width: 700px;
-        background-position: ;
+        border-radius: 50px;
+        padding: 2rem;
     }
 }
