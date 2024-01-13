@@ -4,11 +4,11 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect } from 'react'
 import Observer from 'gsap/Observer';
 import SplitType from 'split-type'
-import img1 from './assets/1.png';
-import img2 from './assets/2.png';
-import img3 from './assets/3.jpg';
-import img4 from './assets/4.png';
-import img5 from './assets/5.png';
+import img1 from './assets/3.jpg';
+import img2 from './assets/3.png';
+import img3 from './assets/4.png';
+import img4 from './assets/2.png';
+import img5 from './assets/4.png';
 
 import './App.css'
 import jsonData from './data.json';
