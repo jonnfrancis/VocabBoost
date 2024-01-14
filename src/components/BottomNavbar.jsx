@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { StatsModal, ShareModal, HomeModal } from '../components/Modal';
 import stats from '../assets/bxs-dashboard.svg.svg';
-import share from '../assets/bx-fast-forward.svg';
 import home from '../assets/bxs-store-alt.svg.svg';
 
 const BottomNavBar = () => {
@@ -27,7 +26,7 @@ const BottomNavBar = () => {
                 <img src={home} alt="ViteVocab home" />
             </div>
             <div className="nav-button" onClick={openShareModal}>
-                <img src={share} alt="ViteVocab Share" />
+                <i className='bx bx-time-five'></i>
             </div>
 
             {/* Conditionally render modals */}

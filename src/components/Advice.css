@@ -1,0 +1,118 @@
+:root {
+    --l-cyan: hsl(193, 38%, 86%);
+    --n-green: hsl(150, 100%, 66%);
+    --g-blue: hsl(217, 19%, 38%);
+    --d-blue: hsl(217, 19%, 24%);
+    --db-blue: hsl(218, 23%, 16%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+#advice-modal {
+    font-family: 'Manrope', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--db-blue);
+    position: relative;
+} 
+
+.card {
+    width: 60vw;
+    height: 60vh;
+    position: relative;
+    background: var(--d-blue);
+    border-radius: 30px;
+}
+
+.card--id {
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-600);
+    font-family: var(--ff-base);
+    color: var(--n-green);
+    text-align: center;
+    padding: 1em 0;
+}
+
+.card--title {
+    font-size: var(--fs-600);
+    font-weight: var(--fw-semi-bold);
+    letter-spacing: .1rem;
+    font-family: var(--ff-base);
+    color: var(--l-cyan);
+    text-align: center;
+    padding: 10px 30px;
+}
+.advice-span {
+    font-size: var(--fs-700);
+    font-family: var(--ff-gd);
+}
+.card--img {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 2em 0;
+}
+.small-txt {
+    color: var(--l-cyan);
+    position: absolute;
+    bottom: 7%;
+    text-align: center;
+    left: 40%;
+    font-family: var(--ff-gd);
+}
+
+.card--new {
+    position: absolute;
+    bottom: -7%;
+    left: 45%;
+    background: var(--n-green);
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+#advice-close {
+    padding: 10px 15px;
+    background: var(--n-green);
+    border: none;
+    color: var(--db-blue);
+    font-size: var(--fs-200);
+    font-family: var(--ff-base);
+    border-radius: 10px;
+    position: absolute;
+    bottom: 2rem;
+    margin: 0;
+    left: calc(48% - 20px);
+}
+
+.card--new:hover,
+.card--new:focus {
+    box-shadow: 0 0 3rem 0.25rem var(--n-green);
+}
+
+.animate {
+    animation: scale 0.85s ease-in-out;
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(65%);
+    }
+
+    65% {
+        transform: scale(180%);
+    }
+
+    100% {
+        transform: scale(100%);
+    }
+}
