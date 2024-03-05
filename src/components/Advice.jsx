@@ -7,7 +7,7 @@ import patternMobi from '../assets/pattern-divider-mobile.svg';
 
 export default function Advice() {
     const api="https://api.adviceslip.com/advice"
-    const [advice, setAdvice] = React.useState({id: 117, advice: "It is easy to sit up and take notice, what's difficult is getting up and taking action."})
+    const [advice, setAdvice] = React.useState({id: 117, advice: "Just because you are the loudest, doesn't make you right."})
     const [animate, setAnimate] = React.useState(false)
     
     const fetchData = () => {
@@ -23,7 +23,7 @@ export default function Advice() {
         <div className="card">
             <h4 className="card--id">ADVICE #{advice.id}</h4>
             <blockquote>
-                <h1 className="card--title"> <span className='advice-span'>" <br /></span>{advice.advice}</h1>
+                <h1 className="card--title"> <span className='advice-span'> &quot; <br /></span>{advice.advice}</h1>
             </blockquote>
             <div className="card--img">
                 <picture>
@@ -37,7 +37,7 @@ export default function Advice() {
                     />
                 </picture>
             </div>
-            <small className="small-txt">Click below for more advice</small>
+            <small className="small-txt">Roll the Dice for more advice</small>
             <div onClick={fetchData} className="card--new">
                 <img className={animate ? "animate" : ""} src={iconDice} />
             </div>

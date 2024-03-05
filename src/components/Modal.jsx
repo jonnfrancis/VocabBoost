@@ -14,7 +14,7 @@ const StatsModal = ({ onClose }) => {
 };
 
 const ShareModal = ({ onClose }) => {
-    const [currentTime, setCurrentTime] = useState('0:00');
+    const [currentTime, setCurrentTime] = useState('12:00');
     const [currentDate, setCurrentDate] = useState('1 - January - 2024');
 
     useEffect(() => {
